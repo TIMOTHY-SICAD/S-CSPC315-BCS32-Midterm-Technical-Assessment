@@ -11,24 +11,17 @@ double calculateDistance(double x1, double y1, double x2, double y2) {
 int calculateSum(int n) { 
     int sum = 0; 
     for (int i = 1; i <= n; i++) 
-        sum = sum + i;
+        sum = sum + i; // Add current number to ongoing sum
 
     return sum; 
 } 
 
-// Main
+// Main code
 int main() {
     // Initialize variables to be used
     int N;
-
-    double x1;
-    double y1;
-
-    double x2;
-    double y2;
-
-    double distance_sum = 0;
-    double distance_current;
+    double x1, y1, x2, y2;
+    double distance_sum = 0, distance_current;
 
     cout << "Enter how many Points to be traveled: ";
     cin >> N; // Get N from user input
@@ -68,7 +61,7 @@ int main() {
     }
 
     // Print total distance traveled, as well as the sum of the first N natural numbers
-    cout << "Total distance traveled: " << distance_sum << endl;
+    cout << "Total Distance traveled: " << distance_sum << endl;
     cout << "Additionally, here is the sum of the first N (" << N << ") natural numbers: " << calculateSum(N) << endl;
 
     return 0;
